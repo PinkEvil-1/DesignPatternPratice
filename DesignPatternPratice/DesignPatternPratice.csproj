@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Creational\Factory\" />
+    <Folder Include="Creational\Builder\" />
+    <Folder Include="Creational\Prototype\" />
+  </ItemGroup>
+
 </Project>
