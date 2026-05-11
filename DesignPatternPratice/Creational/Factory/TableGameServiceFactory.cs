@@ -1,12 +1,11 @@
 ﻿using DesignPatternPratice.Creational.Factory.Interface;
 
-namespace DesignPatternPratice.Creational.Factory
+namespace DesignPatternPratice.Creational.Factory;
+
+public class TableGameServiceFactory : GameServiceFactory
 {
-    public class TableGameServiceFactory : GameServiceFactory
+    public override IGameService CreateGameService()
     {
-        public override IGameService CreateGameService()
-        {
-            return new TableGameService();
-        }
+        return new TableGameService();
     }
 }

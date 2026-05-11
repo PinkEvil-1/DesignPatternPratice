@@ -1,8 +1,7 @@
-﻿namespace DesignPatternPratice.Creational.Factory.Interface
+﻿namespace DesignPatternPratice.Creational.Factory.Interface;
+
+// Product：產品介面
+public interface IGameService
 {
-    // Product：產品介面
-    public interface IGameService
-    {
-        void StartGame();
-    }
+    void StartGame();
 }

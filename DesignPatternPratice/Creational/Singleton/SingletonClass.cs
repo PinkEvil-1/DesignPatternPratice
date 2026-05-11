@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatternPratice.Creational;
+﻿namespace DesignPatternPratice.Creational;
 
 public sealed class SingletonClass
 {
@@ -12,7 +6,7 @@ public sealed class SingletonClass
 
     private static readonly Lazy<SingletonClass> lazyInstance = new Lazy<SingletonClass>(() => new SingletonClass());
 
-    private SingletonClass() 
+    private SingletonClass()
     {
         this.HashCode = Guid.NewGuid().GetHashCode();
     }

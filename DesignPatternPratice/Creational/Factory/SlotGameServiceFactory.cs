@@ -1,13 +1,12 @@
 ﻿using DesignPatternPratice.Creational.Factory.Interface;
 
-namespace DesignPatternPratice.Creational.Factory
+namespace DesignPatternPratice.Creational.Factory;
+
+// ConcreteCreator：具體工廠
+public class SlotGameServiceFactory : GameServiceFactory
 {
-    // ConcreteCreator：具體工廠
-    public class SlotGameServiceFactory : GameServiceFactory
+    public override IGameService CreateGameService()
     {
-        public override IGameService CreateGameService()
-        {
-            return new SlotGameService();
-        }
+        return new SlotGameService();
     }
 }
