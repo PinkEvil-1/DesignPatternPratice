@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Creational\Builder\" />
     <Folder Include="Creational\Prototype\" />
   </ItemGroup>
 
